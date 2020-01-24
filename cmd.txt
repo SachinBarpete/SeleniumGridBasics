@@ -1,0 +1,5 @@
+# To launch server
+java -jar selenium-server-standalone-3.141.59.jar -role hub
+
+# To register node
+java -Dwebdriver.chrome.driver="/home/bridglabz/selenium-webdriver/chromedriver_linux64/chromedriver" -jar selenium-server-standalone-3.141.59.jar -role node -hub http://192.168.57.1:4444/grid/register/
